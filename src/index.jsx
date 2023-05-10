@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
 import React, { useState, useEffect } from 'react';
+import './index.css';
 import styled from '@emotion/styled';
 import { GlobalStyles } from './GlobalStyles';
 import NoteList from './components/NoteList';
@@ -73,9 +74,8 @@ function App() {
               <NoteDisplay note={selectedNote} />
               <NoteEditor note={selectedNote} onSave={handleSaveNote} />
             </>
-          ) : (
-            <MarkdownInput onAddNote={handleSaveNote} />
-          )}
+          ) : null
+          }
         </RightPanel>
       </Container>
     </>
