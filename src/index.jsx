@@ -4,7 +4,6 @@ import './index.css';
 import styled from '@emotion/styled';
 import { GlobalStyles } from './GlobalStyles';
 import NoteList from './components/NoteList';
-import MarkdownInput from './components/MarkdownInput';
 import NoteDisplay from './components/NoteDisplay';
 import NoteEditor from './components/NoteEditor';
 
